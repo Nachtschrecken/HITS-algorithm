@@ -2,16 +2,15 @@ import numpy as np
 from sklearn.preprocessing import normalize
 
 # Input web Matrix
-l = np.matrix('0.0 1.0 1.0 1.0;'
-                '1.0 0.0 0.0 1.0;'
-                '1.0 0.0 0.0 0.0;'
-                '0.0 1.0 1.0 0.0')
+l = np.matrix('0.0 1.0 0.0;'
+                '0.0 1.0 1.0;'
+                '0.0 0.0 0.0')
 
 # Default matrices for calculation, do not alter
 np.set_printoptions(precision=3)
 lt = l.transpose()
-h = np.matrix('1.0; 1.0; 1.0; 1.0')
-a = np.matrix('1.0; 1.0; 1.0; 1.0')
+h = np.matrix('1.0; 1.0; 1.0')
+a = np.matrix('1.0; 1.0; 1.0')
 
 # Computation for both hubiness and authority
 def compute(h):
